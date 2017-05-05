@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on     " required!
