@@ -7,10 +7,12 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'vim-scripts/L9'
-Plugin 'vim-scripts/FuzzyFinder'
+"Plugin 'fholgado/minibufexpl.vim'
+"Plugin 'vim-scripts/L9'
+"Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -62,4 +64,5 @@ set showmatch
 set mat=5
 
 nnoremap <silent> <F8> :TlistToggle<CR>
+
 
