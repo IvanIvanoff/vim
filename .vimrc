@@ -1,18 +1,24 @@
 set nocompatible               " be iMproved
+set encoding=utf-8
+scriptencoding utf-8
 syntax on
+colorscheme onedark
 filetype off
 
+set ls=2
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'fholgado/minibufexpl.vim'
 "Plugin 'vim-scripts/L9'
 "Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'kien/ctrlp.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -23,21 +29,13 @@ set autoindent
 set viminfo^=!
 
 map <silent> <C-n> :NERDTreeFocus<CR>
-
-" FuzzyFinder shortcuts
-nmap ,f :FufFileWithCurrentBufferDir<CR>
-nmap ,b :FufBuffer<CR>
-nmap ,t :FufTaggedFile<CR>
-
+map <silent> <C-m> :NERDTreeClose<CR>
 
 let mapleader = ','
 
-" Minibuffer Explorer Settings
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
+let g:lightline = {
+      \ 'colorscheme': 'onedark',
+      \ }
 
 set cf
 set clipboard+=unnamed
@@ -62,7 +60,3 @@ set expandtab
 
 set showmatch
 set mat=5
-
-nnoremap <silent> <F8> :TlistToggle<CR>
-
-
