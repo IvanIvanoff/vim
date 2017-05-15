@@ -1,3 +1,4 @@
+Plugin 'joshdick/onedark.vim'
 set nocompatible               " be iMproved
 set encoding=utf-8
 scriptencoding utf-8
@@ -19,6 +20,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'kien/ctrlp.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 filetype plugin indent on     " required!
