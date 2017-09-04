@@ -1,4 +1,3 @@
-Plugin 'joshdick/onedark.vim'
 set nocompatible               " be iMproved
 set encoding=utf-8
 scriptencoding utf-8
@@ -20,10 +19,14 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'kien/ctrlp.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'joshdick/onedark.vim'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'valloric/youcompleteme'
+Plugin 'vim-scripts/a.vim'
 
 call vundle#end()
 filetype plugin indent on     " required!
+
+let g:python_host_prog = '/usr/bin/python2.7'
 
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
